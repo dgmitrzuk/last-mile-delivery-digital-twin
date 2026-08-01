@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: last-mile-delivery-digital-twin
+Version: 0.1.0
+Summary: Digital Twin framework for sequential and competitive facility location problems in last-mile delivery
+Author: Dawid Gmitrzuk
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: geopandas
+Requires-Dist: shapely
+Requires-Dist: pyproj
+Requires-Dist: fiona
+Requires-Dist: networkx
+Requires-Dist: osmnx
+Requires-Dist: sqlalchemy
+Requires-Dist: psycopg2-binary
+Requires-Dist: scikit-learn
+Requires-Dist: ortools
+Requires-Dist: pyomo
+Requires-Dist: folium
+Requires-Dist: plotly
+Requires-Dist: jupyter
+Requires-Dist: pytest
+Requires-Dist: black
+Requires-Dist: ruff
+Dynamic: license-file

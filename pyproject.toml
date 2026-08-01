@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "last-mile-delivery-digital-twin"
+version = "0.1.0"
+description = "Digital Twin framework for sequential and competitive facility location problems in last-mile delivery"
+authors = [
+    {name = "Dawid Gmitrzuk"}
+]
+requires-python = ">=3.11"
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+
+    "geopandas",
+    "shapely",
+    "pyproj",
+    "fiona",
+
+    "networkx",
+    "osmnx",
+
+    "sqlalchemy",
+    "psycopg2-binary",
+
+    "scikit-learn",
+
+    "ortools",
+    "pyomo",
+
+    "folium",
+    "plotly",
+
+    "jupyter",
+
+    "pytest",
+    "black",
+    "ruff"
+]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
