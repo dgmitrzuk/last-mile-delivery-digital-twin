@@ -1,0 +1,20 @@
+services:
+  postgis:
+    image: postgis/postgis:16-3.4
+    container_name: postgis_supply_chain
+
+    environment:
+      POSTGRES_DB: postgis_master_thesis
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - master-thesis_postgis_data:/var/lib/postgresql/data
+
+
+volumes:
+  master-thesis_postgis_data:
+    external: true
